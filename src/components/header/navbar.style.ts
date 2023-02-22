@@ -33,8 +33,8 @@ export const FeatureArrow = styled.span`
 
 export const FeaturesContainer = styled.div`
       position: absolute;
-    left: 40%;
-    top: 17%;
+    left: 35%;
+    top: 11%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 4px;
 

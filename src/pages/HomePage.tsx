@@ -6,6 +6,8 @@ import Button from '@mui/material/Button';
 import InputBase from '@mui/material/InputBase';
 import {UpdatesPageContainer, Container,HomeSectionContainer,InputSearchContainer} from '../styles/homePage.style'
 import { alpha, styled } from '@mui/material/styles';
+import Marketing from '../components/homePage/Marketing';
+import Testimonials from '../components/homePage/Testimonials';
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
     'label + &': {
@@ -110,7 +112,8 @@ Use our tools for lead generation, market analysis and competitor research.
         </InputSearchContainer>
         <ScanningInfoHomeSection  variant="body1" gutterBottom>We periodically scan <span style={{fontWeight: 'bold', background: '#A5B4FC', borderRadius:'3px', padding: '3px 6px'}}>213,240,178</span> websites and provide up-to-date information.</ScanningInfoHomeSection>
         </HomeSectionContainer>
-
+        <Marketing />
+        <Testimonials />
     </Container>
   )
 }

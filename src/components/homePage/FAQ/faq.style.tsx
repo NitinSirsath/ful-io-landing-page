@@ -44,6 +44,10 @@ export const AccordionStyle = styledM(Accordion)(() => ({
     ` 
 
 
- export const RightSide = styled.div`
+ export const RightSide = styled.div<{background:string}>`
     flex: 0.5;
+    background-image: url(${(props) => props.background});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     `

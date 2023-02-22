@@ -6,6 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import arrow from '../../../assets/arrow.png'
+import kittyImage from '../../../assets/kitty-faq.png'
 
 
 
@@ -38,7 +39,7 @@ const FaqSection = () => {
           })}
       </QuestionContainer>
         </LeftSide>
-      <RightSide>
+      <RightSide background={kittyImage}>
 
       </RightSide>
     </Container>

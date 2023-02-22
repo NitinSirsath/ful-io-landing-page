@@ -27,7 +27,7 @@ const TestimonialPara = styled(Typography)(() => ({
   const CardWrapper = styledC.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 100px;
+    margin: 40px 100px;
     margin-top: 10;
     grid-gap: 60px;
     padding: 50px;

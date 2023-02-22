@@ -1,9 +1,9 @@
-import todd from '../../assets/testimonials/todd.png'
-import nicolas from '../../assets/testimonials/nicholas.png'
-import chris from '../../assets/testimonials/chris.png'
-import madsingers from '../../assets/testimonials/madsingers.png'
-import yana from '../../assets/testimonials/yana.png'
-import robert from '../../assets/testimonials/robert.png'
+import todd from '../../../assets/testimonials/todd.png'
+import nicolas from '../../../assets/testimonials/nicholas.png'
+import chris from '../../../assets/testimonials/chris.png'
+import madsingers from '../../../assets/testimonials/madsingers.png'
+import yana from '../../../assets/testimonials/yana.png'
+import robert from '../../../assets/testimonials/robert.png'
 
 
 export const data = [

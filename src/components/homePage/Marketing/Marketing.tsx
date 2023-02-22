@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImage from '../../assets/marketing/background-domain.svg'
+import bgImage from '../../../assets/marketing/background-domain.svg'
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div<{background:string}>`
+padding: 40px 0px;
 
-
-background-image: url(${(props) => props.background});
+background-image: linear-gradient(90deg, #a462eb3c 0%, #6969ee3c 1%, #d4e4e83f 100%),url(${(props) => props.background});
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;

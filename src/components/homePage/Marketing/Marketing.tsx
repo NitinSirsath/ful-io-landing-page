@@ -9,7 +9,8 @@ import Stack from '@mui/material/Stack';
 
 const TitleHeading = styled(Typography)(({ theme }) => ({
     textAlign: 'center',
-    marginTop: '60px',
+    marginTop: '50px',
+    marginBottom: '60px',
     color: '#222324',
     fontWeight: 700,
     letterSpacing: '0.8px',

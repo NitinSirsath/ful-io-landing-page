@@ -32,6 +32,8 @@ export const HomeSectionContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 50px;
+    
 `
 
 export const InputSearchContainer = styled.div`

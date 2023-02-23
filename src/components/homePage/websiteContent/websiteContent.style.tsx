@@ -37,10 +37,7 @@ export const Card = styled.div<{direction:boolean}>`
 
 export const ImageContainer = styled.div<{flexsize:number}>`
    
-    /* background-image: url(${(props) => props.background});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+
     flex: ${(props) => props.flexsize};
 
     img{

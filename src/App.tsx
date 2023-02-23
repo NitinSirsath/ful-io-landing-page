@@ -10,7 +10,11 @@ import UpdatesPage from './pages/UpdatesPage'
 import Footer from './components/Footer/Footer'
 import ResponsiveAppBar from './components/header/ResponsiveAppBar'
 
-export const IsMobileContext = createContext()
+
+type IsMobileContextType = {
+  isMobile: Boolean
+}
+export const IsMobileContext = createContext<IsMobileContextType>({isMobile: false})
 
 function App() {
 

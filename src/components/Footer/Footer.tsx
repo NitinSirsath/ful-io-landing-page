@@ -12,7 +12,7 @@ const Footer = (props: Props) => {
     return (
         <Container>
             <SocialContainer>
-                {/* <img src={Logo} alt="" height={40}/> */}
+               
                 <Logo colorProp='#fff' height={40}/>
                 <p>© 2023 Ful.io</p>
                 <p>All Rights Reserved</p>

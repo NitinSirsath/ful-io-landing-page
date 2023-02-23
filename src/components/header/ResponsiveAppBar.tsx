@@ -53,7 +53,7 @@ const featureData = [
 
 
 
-const LoginButton = styled(Button)<ButtonProps>(({ theme }) => ({
+const LoginButton = styled(Button)({
   color: '#000000',
   fontWeight: 600,
   backgroundColor: 'transparent',
@@ -63,8 +63,8 @@ const LoginButton = styled(Button)<ButtonProps>(({ theme }) => ({
   '&:hover': {
     backgroundColor: 'transparent',
   },
-}));
-const SignUpButton = styled(Button)<ButtonProps>(( ) => ({
+});
+const SignUpButton = styled(Button)({
   color: '#5450E2',
   fontWeight: 600,
   backgroundColor: '#fff',
@@ -73,7 +73,7 @@ const SignUpButton = styled(Button)<ButtonProps>(( ) => ({
   '&:hover': {
     backgroundColor: '#fff',
   },
-}));
+});
 
 const LinkButton = styled(Link)`
   text-decoration: none;
@@ -88,7 +88,7 @@ const LinkButton = styled(Link)`
 
 function ResponsiveAppBar() {
   const {isMobile} = useContext(IsMobileContext)
-  console.log(isMobile)
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 

@@ -29,7 +29,7 @@ export const data = [
         image : iron_man
     },
     {
-        title : 'Security Reconnaissance',
+        title : 'Email Verification',
         heading : 'Your security is our top priority.',
         desc : 'Security professionals worldwide use our web technologies. This solution helps you track security threats on your website. The technology also provides you with detailed information on vulnerabilities and exploitation risks.',
         highlight1 : 'Get immediate results and a responsive, intuitive UX with our technology.',

@@ -33,13 +33,36 @@ const TestimonialPara = styled(Typography)(() => ({
     padding: 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 60px 40px -7px;
     border-radius: 6px;
+
+     @media (max-width: 868px) {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 20px 50px;
+      padding: 30px;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px 20px;
+      // padding: 20px;
+    }
+    @media (max-width: 668px) {
+      grid-template-columns: repeat(1, 1fr);
+      margin : 0px
+      // padding: 10px;
+     width: 100vw;
+     }
+    
   `
 
   const Card = styledC.div`
     display: flex;
     gap: 20px;
+
+    @media (max-width: 668px) {
+      margin: 0px;
+      gap: 10px;
+    }
   `
-  const CardImage = styledC.div`
+  const CardImage = styledC.div<{background:string}>`
     width: 60px;
     height: 60px;
     background: url(${(props) => props.background});
@@ -49,9 +72,17 @@ const TestimonialPara = styled(Typography)(() => ({
     border-radius: 50%;    
   flex: 0.15;
 
+     @media (max-width: 668px) {
+      flex: 0.2;
+     }
+
   `
   const TestimonialInfo = styledC.div`
     flex: 0.85;
+
+      @media (max-width: 668px) {
+      flex: 0.8;
+      }
   `
 
 

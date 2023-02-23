@@ -23,6 +23,18 @@ export const Container = styled.div`
     }
 `
 
+export const ListItems = styled.li`
+    list-style: none;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1rem;
+            color: black;
+            margin: 0px 8px;
+            &:hover{
+                color: #5450E2;
+            }
+`
+
 export const FeatureArrow = styled.span<{arrowState: boolean}>`
     /* transform: rotate(0.5turn); */
 
@@ -34,7 +46,7 @@ export const FeatureArrow = styled.span<{arrowState: boolean}>`
 export const FeaturesContainer = styled.div`
       position: absolute;
     left: 35%;
-    top: 11%;
+    top: 75%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 4px;
     background-color: #fff;

@@ -31,6 +31,15 @@ export const InputSearchContainer = styled.div`
 margin-top: 20px;
     display: flex;
     align-items: center;
-    
     gap: 10px;
+
+    @media (max-width: 868px) {
+      
+     }
+     @media (max-width: 768px) {
+    
+     }
+     @media (max-width: 668px) {
+      flex-direction: column;
+     }
 `

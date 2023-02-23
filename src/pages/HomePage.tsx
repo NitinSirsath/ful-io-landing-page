@@ -10,6 +10,7 @@ import { alpha, styled } from '@mui/material/styles';
 import Testimonials from '../components/homePage/testimonial/Testimonials';
 import FaqSection from '../components/homePage/FAQ/FaqSection';
 import Marketing from '../components/homePage/Marketing/Marketing';
+import WebsiteContent from '../components/homePage/websiteContent/WebsiteContent';
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
     'label + &': {
@@ -22,7 +23,14 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
       border: '1px solid #ced4da',
       fontSize: 16,
       width: '500px',
-      
+
+          '@media  (max-width: 768px)': {
+            width: '400px',
+          },
+          '@media  (max-width: 568px)': {
+            width: '300px',
+          },
+
       padding: '10px 12px',
       transition: theme.transitions.create([
         'border-color',
@@ -47,6 +55,8 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
         borderColor: theme.palette.primary.main,
       },
     },
+
+    
   }));
 
   const SearchButton = styled(Button)(({ theme }) => ({
@@ -88,6 +98,8 @@ const ScanningInfoHomeSection = styled(Typography)(({ theme }) => ({
     marginTop: '60px',
     color: '#4B5563',
     letterSpacing: '0.8px',
+    padding: '0 20px',
+
   }));
 
 type Props = {}
@@ -115,6 +127,7 @@ Use our tools for lead generation, market analysis and competitor research.
         <ScanningInfoHomeSection  variant="body1" gutterBottom>We periodically scan <span style={{fontWeight: 'bold', background: '#A5B4FC', borderRadius:'3px', padding: '3px 6px'}}>213,240,178</span> websites and provide up-to-date information.</ScanningInfoHomeSection>
         </HomeSectionContainer>
         <Marketing />
+        <WebsiteContent />
         <Testimonials />
         <FaqSection />
     </Container>

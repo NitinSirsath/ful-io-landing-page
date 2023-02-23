@@ -27,7 +27,7 @@ const FaqSection = () => {
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <Typography>{question.question}</Typography>
+                  <Typography sx={{fontWeight: 700}}>{question.question}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
@@ -39,7 +39,8 @@ const FaqSection = () => {
           })}
       </QuestionContainer>
         </LeftSide>
-      <RightSide background={kittyImage}>
+      <RightSide>
+        <img src={kittyImage} alt="" />
 
       </RightSide>
     </Container>

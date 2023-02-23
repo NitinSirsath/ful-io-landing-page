@@ -16,23 +16,23 @@ const Container = styled.div`
 
 type Props = {
   data: {
-    map(arg0: (_item: { title: string; icon: string }, idx: any) => JSX.Element): React.ReactNode
-    title : string,
-  icon : string,
-  },
+
+    title: string,
+    icon: string,
+  }[],
   heading: string
 }
 
-const FooterCard = ({data, heading}: Props) => {
-  console.log(data)
+const FooterCard = ({ data, heading }: Props) => {
+  console.log(data, 'footer card data')
   return (
     <Container>
       <h5>{heading}</h5>
       {
-        data.map((_item : { title : string, icon : string}, idx) => {
-          return  <div key={idx}> 
-          {data?.icon && <_item.icon />}
-           <p>{data?.title}</p>
+        data.map((_item: { title: string, icon: string }, idx) => {
+          return <div key={idx}>
+            {_item?.icon && <_item.icon />}
+            <p>{_item?.title}</p>
           </div>
         })
       }

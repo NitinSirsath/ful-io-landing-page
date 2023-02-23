@@ -63,7 +63,7 @@ const LoginButton = styled(Button)<ButtonProps>(({ theme }) => ({
     backgroundColor: 'transparent',
   },
 }));
-const SignUpButton = styled(Button)<ButtonProps>(({ theme }) => ({
+const SignUpButton = styled(Button)<ButtonProps>(( ) => ({
   color: '#5450E2',
   fontWeight: 600,
   backgroundColor: '#fff',

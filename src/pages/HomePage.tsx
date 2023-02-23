@@ -11,6 +11,8 @@ import Testimonials from '../components/homePage/testimonial/Testimonials';
 import FaqSection from '../components/homePage/FAQ/FaqSection';
 import Marketing from '../components/homePage/Marketing/Marketing';
 import WebsiteContent from '../components/homePage/websiteContent/WebsiteContent';
+import LeftTriangleElement from '../assets/leftTriangle.svg'
+import TopTriangleElement from '../assets/topTriangle.svg'
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
     'label + &': {
@@ -107,6 +109,8 @@ type Props = {}
 const HomePage = (props: Props) => {
   return (
     <Container>
+        <img src={LeftTriangleElement} alt="leftTriangle" height={400} style={{position: 'absolute',zIndex:'-10', top: '350px', left: '-18%'}} />
+        <img src={TopTriangleElement}  alt="topTriangle" height={600} style={{position: 'absolute', zIndex:'-10',top: '-330px', right: '-14%'}} />
         <UpdatesPageContainer>
             <UpdatesPageText   variant="subtitle1" >🎉 73821 new domains added on 22 February 2023 <span><LinkStyle to='/updates'>Read More</LinkStyle></span></UpdatesPageText>
         </UpdatesPageContainer>

@@ -4,9 +4,9 @@ export const Container = styled.div`
     
 `
 
-export const DesignElemntSVG = styled.img`
-
-@media (max-width: 868px) {
+export const DesignElemntSVG = styled.img<{top:number, left:number, right:number}>`
+   
+@media (max-width: 968px) {
             display: none;
         }
 `

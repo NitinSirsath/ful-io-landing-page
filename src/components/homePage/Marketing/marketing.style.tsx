@@ -16,6 +16,11 @@ export const CardWrapper = styled.div`
   gap: 60px;
   margin: 50px 0px;
 
+  @media (max-width: 968px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
   @media (max-width: 868px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

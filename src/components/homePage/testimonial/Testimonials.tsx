@@ -34,6 +34,11 @@ const TestimonialPara = styled(Typography)(() => ({
     box-shadow: rgba(0, 0, 0, 0.1) 0px 60px 40px -7px;
     border-radius: 6px;
 
+     @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 20px 50px;
+      padding: 30px;
+    }
      @media (max-width: 868px) {
       grid-template-columns: repeat(2, 1fr);
       margin: 20px 50px;
@@ -57,6 +62,9 @@ const TestimonialPara = styled(Typography)(() => ({
     display: flex;
     gap: 20px;
 
+    @media (max-width: 968px) {
+      
+    }
     @media (max-width: 668px) {
       margin: 0px;
       gap: 10px;
@@ -69,10 +77,25 @@ const TestimonialPara = styled(Typography)(() => ({
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;    
+    border-radius: 50%; 
+    display: flex;
+    justify-content: flex-end;
   flex: 0.15;
-
-     @media (max-width: 668px) {
+  
+  @media (max-width: 968px) {
+       flex: 0.22;
+      
+     }
+  @media (max-width: 868px) {
+       flex: 0.22;
+      
+     }
+  @media (max-width: 668px) {
+       flex: 0.12;
+      
+     }
+  @media (max-width: 468px) {
+       flex: 0.2;
       
      }
 
@@ -80,8 +103,19 @@ const TestimonialPara = styled(Typography)(() => ({
   const TestimonialInfo = styledC.div`
     flex: 0.85;
 
+      @media (max-width: 968px) {
+        flex: 0.88;
+      }
+      @media (max-width: 868px) {
+        flex: 0.88;
+      }
       @media (max-width: 668px) {
-     
+        flex: 0.88;
+        
+      }
+      @media (max-width: 468px) {
+        flex: 0.8;
+        
       }
   `
 

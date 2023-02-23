@@ -53,6 +53,15 @@ const featureData = [
 
 
 
+const ResNavbar = styled(MenuItem)({
+    flexDirection: 'column',
+    width: '450px',
+    gap: '30px',
+
+  '&:hover': {
+    
+  },
+});
 const LoginButton = styled(Button)({
   color: '#000000',
   fontWeight: 600,
@@ -160,15 +169,15 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-             <MenuItem  onClick={handleCloseNavMenu}>
+             <ResNavbar   onClick={handleCloseNavMenu}>
                   <LinkButton to='/'><ListItems>Home</ListItems></LinkButton>
                   <ListItems onClick={() => setIsFeaturesOpen(preV => !preV)}>Features <FeatureArrow arrowState={isFeaturesOpen}><img src={Arrow} alt="" /></FeatureArrow></ListItems>
                   <LinkButton to='/pricing'><ListItems>Pricing</ListItems></LinkButton>
                   <LinkButton to='/blog'><ListItems>Blog</ListItems></LinkButton>
-                </MenuItem>
+                </ResNavbar>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -183,9 +192,10 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              justifyContent: 'flex-end',
             }}
           >
-         <Logo colorProp='#000000' height={40}/>
+         <Logo colorProp='#181717' height={40}/>
           </Typography>
           <Box sx={{ flexGrow: 1, justifyContent: 'center', gap: '30px', display: { xs: 'none', md: 'flex' } }}>
             <LinkButton to='/'><ListItems>Home</ListItems></LinkButton>

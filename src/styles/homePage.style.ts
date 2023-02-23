@@ -4,7 +4,7 @@ export const Container = styled.div`
     
 `
 
-export const DesignElemntSVG = styled.img<{top:number, left:number, right:number}>`
+export const DesignElemntSVG = styled.img`
    
 @media (max-width: 968px) {
             display: none;

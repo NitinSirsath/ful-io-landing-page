@@ -80,6 +80,14 @@ const LinkStyle = styledC(Link)`
     text-decoration: none;
     color: #5450E2;
     margin-left: 8px;
+    
+    &:hover {
+      color: #160fe2;
+      font-weight: 500;
+      border-bottom: 2px solid #5450E2;
+    
+      
+    }
 `
 
 const UpdatesPageText = styled(Typography)(({ theme }) => ({

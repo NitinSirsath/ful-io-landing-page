@@ -185,7 +185,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+         <Logo colorProp='#000000' height={40}/>
           </Typography>
           <Box sx={{ flexGrow: 1, justifyContent: 'center', gap: '30px', display: { xs: 'none', md: 'flex' } }}>
             <LinkButton to='/'><ListItems>Home</ListItems></LinkButton>

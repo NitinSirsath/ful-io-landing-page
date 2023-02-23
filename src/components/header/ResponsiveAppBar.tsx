@@ -20,6 +20,7 @@ import { styled } from '@mui/material/styles';
 import Arrow from '../../assets/arrow.png'
 import { useState , useContext} from 'react';
 import { IsMobileContext } from '../../App';
+import Logo from '../Logo'
 
 
 
@@ -111,7 +112,7 @@ function ResponsiveAppBar() {
     <AppBar sx={{ backgroundColor: 'transparent', boxShadow: 'none', padding: '22px 32px' }} position="static">
       <ContainerM maxWidth="xl">
         <Toolbar sx={{color: 'black'}} disableGutters>
-          <AdbIcon sx={{ color: 'black', display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          
           <Typography
             variant="h6"
             noWrap
@@ -127,7 +128,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+        <Logo colorProp='#000000' height={40}/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

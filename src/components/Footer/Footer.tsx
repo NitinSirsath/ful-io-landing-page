@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FooterCard from './FooterCard';
 import { Contact, FeatureData, moreToKnow, technologyReports } from './footerData';
+import Logo from '../Logo'
 
 type Props = {}
 
@@ -11,7 +12,8 @@ const Footer = (props: Props) => {
     return (
         <Container>
             <SocialContainer>
-                <div>Ful.io</div>
+                {/* <img src={Logo} alt="" height={40}/> */}
+                <Logo colorProp='#fff' height={40}/>
                 <p>© 2023 Ful.io</p>
                 <p>All Rights Reserved</p>
                 <p>

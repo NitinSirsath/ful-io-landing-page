@@ -4,7 +4,7 @@ import styledC from 'styled-components'
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import InputBase from '@mui/material/InputBase';
-import {UpdatesPageContainer, Container,HomeSectionContainer,InputSearchContainer} from '../styles/homePage.style'
+import {UpdatesPageContainer,DesignElemntSVG, Container,HomeSectionContainer,InputSearchContainer} from '../styles/homePage.style'
 import { alpha, styled } from '@mui/material/styles';
 
 import Testimonials from '../components/homePage/testimonial/Testimonials';
@@ -61,7 +61,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
     
   }));
 
-  const SearchButton = styled(Button)(({ theme }) => ({
+  export const SearchButton = styled(Button)(({ theme }) => ({
     textTransform: 'none',
     marginLeft : '20px',
     width: '100px',
@@ -109,8 +109,8 @@ type Props = {}
 const HomePage = (props: Props) => {
   return (
     <Container>
-        <img src={LeftTriangleElement} alt="leftTriangle" height={400} style={{position: 'absolute',zIndex:'-10', top: '350px', left: '-18%'}} />
-        <img src={TopTriangleElement}  alt="topTriangle" height={600} style={{position: 'absolute', zIndex:'-10',top: '-330px', right: '-14%'}} />
+        <DesignElemntSVG src={LeftTriangleElement} alt="leftTriangle" height={400} style={{position: 'absolute',zIndex:'-10', top: '350px', left: '-18%'}} />
+        <DesignElemntSVG src={TopTriangleElement}  alt="topTriangle" height={600} style={{position: 'absolute', zIndex:'-10',top: '-330px', right: '-14%'}} />
         <UpdatesPageContainer>
             <UpdatesPageText   variant="subtitle1" >🎉 73821 new domains added on 22 February 2023 <span><LinkStyle to='/updates'>Read More</LinkStyle></span></UpdatesPageText>
         </UpdatesPageContainer>

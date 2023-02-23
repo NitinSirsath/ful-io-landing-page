@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    
+`
 
+export const DesignElemntSVG = styled.img`
+
+@media (max-width: 868px) {
+            display: none;
+        }
 `
 
 export const UpdatesPageContainer = styled.div`

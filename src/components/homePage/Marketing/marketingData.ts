@@ -1,8 +1,8 @@
-import technologyReports from '../../assets/marketing/Technology_Reports.png'
-import emailVerification from '../../assets/marketing/Email_Verification.png'
-import zoneFiles from '../../assets/marketing/Zone_Files.png'
-import deepSearch from '../../assets/marketing/Deep-Search.png'
-import emailPhone from '../../assets/marketing/Email_and_Phone_Number_Lists.png'
+import technologyReports from '../../../assets/marketing/Technology_Reports.png'
+import emailVerification from '../../../assets/marketing/Email_Verification.png'
+import zoneFiles from '../../../assets/marketing/Zone_Files.png'
+import deepSearch from '../../../assets/marketing/Deep-Search.png'
+import emailPhone from '../../../assets/marketing/Email_and_Phone_Number_Lists.png'
 
 
 

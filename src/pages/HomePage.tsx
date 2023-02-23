@@ -13,6 +13,7 @@ import Marketing from '../components/homePage/Marketing/Marketing';
 import WebsiteContent from '../components/homePage/websiteContent/WebsiteContent';
 import LeftTriangleElement from '../assets/leftTriangle.svg'
 import TopTriangleElement from '../assets/topTriangle.svg'
+import ClientCompanyLogo from '../components/ClientCompanyLogo';
 
 const BootstrapInput = styled(InputBase)(({ theme }) => ({
     'label + &': {
@@ -132,6 +133,7 @@ Use our tools for lead generation, market analysis and competitor research.
         </HomeSectionContainer>
         <Marketing />
         <WebsiteContent />
+        <ClientCompanyLogo />
         <Testimonials />
         <FaqSection />
     </Container>

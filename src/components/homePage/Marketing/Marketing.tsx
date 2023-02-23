@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container,CardWrapper,ButtonContainer} from './marketing.style'
+import {Container,CardWrapper,ButtonContainer,ImageCard,ImageWrapper,BorderContainer} from './marketing.style'
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import { data } from './marketingData';
@@ -39,12 +39,16 @@ const Marketing = () => {
 
       <CardWrapper>
         {data.map((item) => {
-          return <div>
+          return <ImageWrapper>
+            <ImageCard>
             <img src={item.imgsrc} alt="image"  height={150}/>
-          </div>
+          </ImageCard>
+            <p>{item.title}</p>
+          </ImageWrapper>
         })}
       </CardWrapper>
       {/* <div style={{borderBottom: '1px solid lightgrey', padding: '30px',margin: '40px 50px', display: 'flex', justifyContent: 'center'}}></div> */}
+      <BorderContainer></BorderContainer>
       <ButtonContainer>
           <SearchButton variant='outlined'>
             Try it free

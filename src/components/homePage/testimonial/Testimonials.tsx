@@ -73,7 +73,7 @@ const TestimonialPara = styled(Typography)(() => ({
   flex: 0.15;
 
      @media (max-width: 668px) {
-      flex: 0.2;
+      
      }
 
   `
@@ -81,7 +81,7 @@ const TestimonialPara = styled(Typography)(() => ({
     flex: 0.85;
 
       @media (max-width: 668px) {
-      flex: 0.8;
+     
       }
   `
 

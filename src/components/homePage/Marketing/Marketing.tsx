@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImage from '../../../assets/marketing/background-domain.svg'
+
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 
@@ -15,7 +15,7 @@ type Props = {}
 
 const Marketing = (props: Props) => {
   return (
-    <div background={bgImage}>
+    <div background={'/public/background-domain.svg'}>
         <TitleHeading variant="h5" gutterBottom>
         Power Your Sales And Marketing Teams
       </TitleHeading>

@@ -23,7 +23,7 @@ export const Container = styled.div`
     }
 `
 
-export const FeatureArrow = styled.span`
+export const FeatureArrow = styled.span<{arrowState: boolean}>`
     /* transform: rotate(0.5turn); */
 
     img{
@@ -37,7 +37,8 @@ export const FeaturesContainer = styled.div`
     top: 11%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 4px;
-
+    background-color: #fff;
+    padding: 10px 0px;
     div{
         margin-top: 7px;
     }

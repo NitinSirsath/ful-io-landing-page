@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import PricingPage from './pages/PricingPage'
 import BlogPage from './pages/BlogPage'
 import UpdatesPage from './pages/UpdatesPage'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,7 @@ function App() {
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/updates" element={<UpdatesPage />} />
     </Routes>
-
+    <Footer />
     </div>
   )
 }

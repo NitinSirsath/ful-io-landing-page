@@ -11,7 +11,7 @@ export const data = [
         name: 'Todd Dunsmore',
         imgsrc: todd,
         position : 'Doja Marketing/Defi Founder',
-        para : '"These web technologies quickly became a game-changer for our business. Lead generation projects that used to take a whole team are completely automatic now. We were able to segment traffic based on location, identify more prospects, and onboard more clients. I cant say enough good things about Ful.io.'
+    para : '"These web technologies quickly became a game-changer for our business. Lead generation projects that used to take a whole team are completely automatic now.We were able to segment traffic based on location, identify more prospects, and onboard more clients. I cant say enough good things about Ful.io.'
     },
     {
         name: 'Nicholas Altimore',
